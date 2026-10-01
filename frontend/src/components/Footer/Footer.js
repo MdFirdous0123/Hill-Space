@@ -28,7 +28,7 @@ const Footer = () => {
                 Transforming houses into dream homes across Bihar with premium interior design, honest pricing, and a 10-year warranty you can count on.
               </p>
               <div className="footer__socials">
-                <a href="https://instagram.com" target="_blank" rel="noreferrer" aria-label="Instagram">
+                <a href="https://www.instagram.com/hillspaceinterior" target="_blank" rel="noreferrer" aria-label="Instagram">
                   <FaInstagram />
                 </a>
                 <a href="https://facebook.com" target="_blank" rel="noreferrer" aria-label="Facebook">
