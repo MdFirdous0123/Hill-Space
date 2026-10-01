@@ -89,7 +89,7 @@ const ContactPage = () => {
                   <div className="contact-info__icon"><FaEnvelope /></div>
                   <div>
                     <h4>Email Us</h4>
-                    <a href="mailto:hello@hillspace.in">hello@hillspace.in</a>
+                    <a href="mailto:hillspaceinterior@gmail.com">hillspaceinterior@gmail.com</a>
                     <p>We reply within 24 hours</p>
                   </div>
                 </div>

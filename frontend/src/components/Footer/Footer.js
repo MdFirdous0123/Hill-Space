@@ -106,7 +106,7 @@ const Footer = () => {
                 </div>
                 <div className="footer__contact-item">
                   <FaEnvelope className="footer__contact-icon" />
-                  <a href="mailto:hello@hillspace.in">hello@hillspace.in</a>
+                  <a href="mailto:hillspaceinterior@gmail.com">hillspaceinterior@gmail.com</a>
                 </div>
                 <a
                   href="https://wa.me/917888709747?text=Hi%20Hillspace!%20I%27m%20interested%20in%20your%20interior%20design%20services."
