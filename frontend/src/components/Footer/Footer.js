@@ -25,7 +25,7 @@ const Footer = () => {
                 Where Vision Meets Craftsmanship
               </p>
               <p className="footer__desc">
-                Transforming houses into dream homes across Maharashtra with premium interior design, honest pricing, and a 10-year warranty you can count on.
+                Transforming houses into dream homes across Bihar with premium interior design, honest pricing, and a 10-year warranty you can count on.
               </p>
               <div className="footer__socials">
                 <a href="https://instagram.com" target="_blank" rel="noreferrer" aria-label="Instagram">
@@ -85,10 +85,10 @@ const Footer = () => {
                 <div className="footer__contact-item">
                   <FaMapMarkerAlt className="footer__contact-icon" />
                   <div>
-                    <p>Hillspace Interior Design Studio</p>
-                    <p>Maharashtra, India</p>
+                    <p>Pakki Sarai Rd, near Punjab National Bank,</p>
+                    <p>Chandwara, Muzaffarpur, Bihar 842001</p>
                     <a
-                      href="https://share.google/0QgmHiwaXNN4xVwcb"
+                      href="https://maps.app.goo.gl/dYd6PZdzihjSDX3r7"
                       target="_blank"
                       rel="noreferrer"
                       className="footer__map-link"
@@ -140,7 +140,7 @@ const Footer = () => {
       <div className="footer__bottom">
         <div className="container">
           <p>© {year} Hillspace Interior Design Studio. All rights reserved.</p>
-          <p>Crafted with ♥ for beautiful homes across Maharashtra</p>
+          <p>Crafted with ♥ for beautiful homes across Bihar</p>
         </div>
       </div>
     </footer>

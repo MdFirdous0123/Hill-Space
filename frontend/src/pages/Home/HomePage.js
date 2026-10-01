@@ -420,8 +420,8 @@ const HomePage = () => {
                   <span>📍</span>
                   <div>
                     <strong>Hillspace Interior Design Studio</strong>
-                    <p>Maharashtra, India</p>
-                    <a href="https://share.google/0QgmHiwaXNN4xVwcb" target="_blank" rel="noreferrer" className="map-directions-link">
+                    <p>Pakki Sarai Rd, near Punjab National Bank,<br/>Chandwara, Muzaffarpur, Bihar 842001</p>
+                    <a href="https://maps.app.goo.gl/dYd6PZdzihjSDX3r7" target="_blank" rel="noreferrer" className="map-directions-link">
                       Get Directions →
                     </a>
                   </div>
@@ -452,7 +452,7 @@ const HomePage = () => {
             <div className="map-embed">
               <iframe
                 title="Hillspace Studio Location"
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3769.3459748432934!2d72.97813!3d19.21830!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTnCsDEzJzA1LjkiTiA3MsKwNTgnNDEuMyJF!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3598.823!2d85.3943432!3d26.1253178!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39ed11b00588782b%3A0x2d832cc3c9e864248!2sHillSpace%20Interior!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin"
                 width="100%" height="100%" style={{border:0}} allowFullScreen="" loading="lazy"
                 referrerPolicy="no-referrer-when-downgrade"
               ></iframe>
