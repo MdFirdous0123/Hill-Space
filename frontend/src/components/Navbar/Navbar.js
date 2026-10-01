@@ -37,7 +37,19 @@ const Navbar = () => {
 
         {/* Logo */}
         <Link to="/" className="navbar__logo">
-          <span className="navbar__logo-icon">H</span>
+          <span className="navbar__logo-icon">
+            <svg viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect width="44" height="44" rx="8" fill="#1A1A1A"/>
+              {/* House roof */}
+              <path d="M22 6L38 20H6L22 6Z" fill="#C9A355"/>
+              {/* House body */}
+              <rect x="9" y="20" width="26" height="18" rx="1" fill="#C9A355" opacity="0.15"/>
+              {/* H letter */}
+              <rect x="13" y="22" width="3.5" height="14" rx="1" fill="#C9A355"/>
+              <rect x="27.5" y="22" width="3.5" height="14" rx="1" fill="#C9A355"/>
+              <rect x="13" y="27.5" width="18" height="3" rx="1" fill="#C9A355"/>
+            </svg>
+          </span>
           <span className="navbar__logo-text">
             HILLSPACE
             <small>Interior Design Studio</small>

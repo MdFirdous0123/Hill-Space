@@ -100,7 +100,8 @@ const Footer = () => {
                 <div className="footer__contact-item">
                   <FaPhone className="footer__contact-icon" />
                   <div>
-                    <a href="tel:+917888709747">+91 7888709747</a>
+                    <a href="tel:+919852878580">+91 98528 78580</a>
+                    <a href="tel:+917888709747" style={{display:'block', marginTop:'4px'}}>+91 7888709747</a>
                     <p className="footer__contact-sub">Mon–Sat, 9am – 7pm</p>
                   </div>
                 </div>

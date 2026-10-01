@@ -14,12 +14,36 @@ import './HomePage.css';
 
 // ─── Data ─────────────────────────────────────────────────────────────────────
 const SERVICES = [
-  { slug: 'modular-kitchen', name: 'Modular Kitchen', desc: 'Smart storage, seamless finishes, and custom layouts that make cooking a joy.', img: 'https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=600&auto=format&fit=crop' },
-  { slug: 'living-room',     name: 'Living Room',     desc: 'Statement walls, ambient lighting, and curated furniture for spaces you love to live in.', img: 'https://images.unsplash.com/photo-1555041469-a586c61ea9bc?w=600&auto=format&fit=crop' },
-  { slug: 'bedroom',         name: 'Master Bedroom',  desc: 'Serene, personalised bedrooms that feel like a luxury retreat every single night.', img: 'https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=600&auto=format&fit=crop' },
-  { slug: 'wardrobe',        name: 'Wardrobe Design', desc: 'Floor-to-ceiling wardrobes with clever interiors — every piece of clothing has a home.', img: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&auto=format&fit=crop' },
-  { slug: 'false-ceiling',   name: 'False Ceiling',   desc: 'Multi-level POP and gypsum ceilings with cove lighting that elevate every room.', img: 'https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?w=600&auto=format&fit=crop' },
-  { slug: 'full-home',       name: 'Full Home',       desc: 'A to Z home transformation — kitchen, bedrooms, living, dining, and more.', img: 'https://images.unsplash.com/photo-1600607687644-c7171b42498b?w=600&auto=format&fit=crop' }
+  {
+    slug: 'modular-kitchen', name: 'Modular Kitchen',
+    desc: 'Custom modular kitchens with smart storage, premium shutters, and layouts designed for how you actually cook.',
+    img: 'https://images.unsplash.com/photo-1556909212-d5b604d0c90d?w=700&auto=format&fit=crop&q=85'
+  },
+  {
+    slug: 'living-room', name: 'Living Room',
+    desc: 'Statement walls, curated furniture, ambient lighting — living rooms that impress every guest and comfort every family.',
+    img: 'https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?w=700&auto=format&fit=crop&q=85'
+  },
+  {
+    slug: 'bedroom', name: 'Master Bedroom',
+    desc: 'Serene, luxury bedrooms crafted for deep rest — from headboard walls to walk-in wardrobe integration.',
+    img: 'https://images.unsplash.com/photo-1616594039964-ae9021a400a0?w=700&auto=format&fit=crop&q=85'
+  },
+  {
+    slug: 'wardrobe', name: 'Wardrobe Design',
+    desc: 'Floor-to-ceiling wardrobes with smart interiors, soft-close drawers, and integrated lighting.',
+    img: 'https://images.unsplash.com/photo-1595526114035-0d45ed16cfbf?w=700&auto=format&fit=crop&q=85'
+  },
+  {
+    slug: 'false-ceiling', name: 'False Ceiling',
+    desc: 'Multi-level POP & gypsum ceilings with cove lighting that transforms the mood of any space.',
+    img: 'https://images.unsplash.com/photo-1600566752355-35792bedcfea?w=700&auto=format&fit=crop&q=85'
+  },
+  {
+    slug: 'full-home', name: 'Full Home Interior',
+    desc: 'Complete end-to-end home transformation — kitchen, living, bedrooms, bathrooms, and more under one roof.',
+    img: 'https://images.unsplash.com/photo-1600585154526-990dced4db0d?w=700&auto=format&fit=crop&q=85'
+  }
 ];
 
 const TRUST_BADGES = [
@@ -30,20 +54,33 @@ const TRUST_BADGES = [
 ];
 
 const TESTIMONIALS = [
-  { name: 'Priya Sharma',   city: 'Pune',       rating: 5, text: 'Hillspace transformed our 3BHK completely. From the modular kitchen to the false ceiling — every detail was perfect. They delivered 2 days ahead of schedule!', img: 'https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=80&auto=format&fit=crop&q=80' },
-  { name: 'Rahul Mehta',    city: 'Mumbai',     rating: 5, text: 'Absolutely stunning living room. What I loved most was the transparency — no hidden costs, the final bill matched the quote. Will recommend to everyone.', img: 'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=80&auto=format&fit=crop&q=80' },
-  { name: 'Anjali Desai',   city: 'Nashik',     rating: 5, text: 'My wardrobe is a dream. The sliding doors, the internal layout, the lighting — it\'s like having a boutique in my bedroom. Best investment ever.', img: 'https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=80&auto=format&fit=crop&q=80' },
-  { name: 'Vikram Joshi',   city: 'Thane',      rating: 5, text: 'The team handled our full home interior from day one to handover. Professional, creative, and never once missed a commitment. 10/10.', img: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=80&auto=format&fit=crop&q=80' },
-  { name: 'Sunita Kulkarni', city: 'Aurangabad', rating: 5, text: 'The modular kitchen Hillspace built for us is exactly what we dreamed of. Quality of materials is top-notch. Even our neighbors ask about it!', img: 'https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=80&auto=format&fit=crop&q=80' }
+  { name: 'Priya Sharma',    city: 'Patna',         rating: 5, text: 'Hillspace transformed our 3BHK completely. From the modular kitchen to the false ceiling — every detail was perfect. Delivered ahead of schedule!', img: 'https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=80&auto=format&fit=crop&q=80' },
+  { name: 'Rahul Mehta',     city: 'Muzaffarpur',   rating: 5, text: 'Absolutely stunning living room. What I loved most was the transparency — no hidden costs, the final bill matched the quote. Will recommend to everyone.', img: 'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=80&auto=format&fit=crop&q=80' },
+  { name: 'Anjali Desai',    city: 'Hajipur',       rating: 5, text: 'My wardrobe is a dream. The sliding doors, internal layout, and lighting — it\'s like having a boutique in my bedroom. Best investment ever.', img: 'https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=80&auto=format&fit=crop&q=80' },
+  { name: 'Vikram Joshi',    city: 'Darbhanga',     rating: 5, text: 'The team handled our full home interior from day one to handover. Professional, creative, and never once missed a commitment. 10/10.', img: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=80&auto=format&fit=crop&q=80' },
+  { name: 'Sunita Kulkarni', city: 'Sitamarhi',     rating: 5, text: 'The modular kitchen Hillspace built for us is exactly what we dreamed of. Quality of materials is top-notch. Even our neighbors ask about it!', img: 'https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=80&auto=format&fit=crop&q=80' }
 ];
 
+// Properly matched before/after pairs — same room type before & after design
 const BEFORE_AFTER = [
-  { title: 'Kitchen Transformation', before: 'https://images.unsplash.com/photo-1556909211-36987daf7b4d?w=700&auto=format&fit=crop', after: 'https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=700&auto=format&fit=crop' },
-  { title: 'Living Room Makeover',   before: 'https://images.unsplash.com/photo-1560448204-603b3fc33ddc?w=700&auto=format&fit=crop', after: 'https://images.unsplash.com/photo-1555041469-a586c61ea9bc?w=700&auto=format&fit=crop' },
-  { title: 'Bedroom Redesign',       before: 'https://images.unsplash.com/photo-1484154218962-a197022b5858?w=700&auto=format&fit=crop', after: 'https://images.unsplash.com/photo-1616594039964-ae9021a400a0?w=700&auto=format&fit=crop' }
+  {
+    title: 'Modular Kitchen Transformation',
+    before: 'https://images.unsplash.com/photo-1556911073-52527ac43761?w=700&auto=format&fit=crop&q=80',
+    after:  'https://images.unsplash.com/photo-1556909212-d5b604d0c90d?w=700&auto=format&fit=crop&q=80'
+  },
+  {
+    title: 'Living Room Makeover',
+    before: 'https://images.unsplash.com/photo-1480074568708-e7b720bb3f09?w=700&auto=format&fit=crop&q=80',
+    after:  'https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?w=700&auto=format&fit=crop&q=80'
+  },
+  {
+    title: 'Master Bedroom Redesign',
+    before: 'https://images.unsplash.com/photo-1505693314120-0d443867891c?w=700&auto=format&fit=crop&q=80',
+    after:  'https://images.unsplash.com/photo-1616594039964-ae9021a400a0?w=700&auto=format&fit=crop&q=80'
+  }
 ];
 
-const CITIES = ['Mumbai', 'Pune', 'Thane', 'Nashik', 'Aurangabad', 'Nagpur', 'Navi Mumbai', 'Other'];
+const CITIES = ['Muzaffarpur', 'Patna', 'Darbhanga', 'Hajipur', 'Sitamarhi', 'Motihari', 'Begusarai', 'Other'];
 
 // ─── Fade-in wrapper ──────────────────────────────────────────────────────────
 const FadeUp = ({ children, delay = 0, className = '' }) => {
@@ -115,12 +152,12 @@ const HomePage = () => {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, ease: 'easeOut' }}
             >
-              <span className="hero__eyebrow">Premium Interior Design Studio</span>
+              <span className="hero__eyebrow">Premium Interior Design Studio · Muzaffarpur, Bihar</span>
               <h1 className="hero__headline">
-                Spaces That Tell <span>Your Story.</span>
+                Design Something <span>People Love.</span>
               </h1>
               <p className="hero__sub">
-                From concept to creation — premium interiors crafted for how you truly live.
+                From concept to handover — interiors that are personal, precise, and built to last a lifetime.
               </p>
               <div className="hero__badges">
                 <span>✦ 45-Day Delivery</span>
@@ -429,7 +466,8 @@ const HomePage = () => {
                 <div className="map-info__row">
                   <span>📞</span>
                   <div>
-                    <a href="tel:+917888709747" className="map-phone">+91 7888709747</a>
+                    <a href="tel:+919852878580" className="map-phone">+91 98528 78580</a>
+                    <a href="tel:+917888709747" className="map-phone" style={{display:'block', marginTop:'4px', fontSize:'14px'}}>+91 7888709747 (WhatsApp)</a>
                     <p>Mon–Sat, 9am to 7pm</p>
                   </div>
                 </div>
@@ -471,8 +509,11 @@ const HomePage = () => {
             </p>
             <div className="cta-banner__actions">
               <Link to="/contact" className="btn btn-gold btn-lg">Book Free Consultation</Link>
+              <a href="tel:+919852878580" className="btn btn-white btn-lg">
+                <FiPhone size={18} /> +91 98528 78580
+              </a>
               <a href="tel:+917888709747" className="btn btn-white btn-lg">
-                <FiPhone size={18} /> Call +91 7888709747
+                <FiPhone size={18} /> +91 7888709747
               </a>
             </div>
           </FadeUp>
