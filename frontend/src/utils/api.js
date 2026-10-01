@@ -1,7 +1,9 @@
 import axios from 'axios';
 
+const BACKEND_URL = process.env.REACT_APP_BACKEND_URL || 'https://hill-space-787j.vercel.app';
+
 const API = axios.create({
-  baseURL: '/api',
+  baseURL: `${BACKEND_URL}/api`,
   headers: { 'Content-Type': 'application/json' }
 });
 

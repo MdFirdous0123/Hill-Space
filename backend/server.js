@@ -28,7 +28,12 @@ app.use('/api/auth/', strictLimiter);
 
 // ─── CORS ──────────────────────────────────────────────────────────────────────
 app.use(cors({
-  origin: [process.env.FRONTEND_URL, 'http://localhost:3000'],
+  origin: [
+    process.env.FRONTEND_URL,
+    'http://localhost:3000',
+    'https://hill-space-five.vercel.app',
+    /\.vercel\.app$/   // allow all vercel preview deployments
+  ],
   credentials: true,
   methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
   allowedHeaders: ['Content-Type', 'Authorization']
