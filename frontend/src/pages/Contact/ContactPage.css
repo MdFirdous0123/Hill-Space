@@ -1,0 +1,110 @@
+.contact-grid {
+  display: grid;
+  grid-template-columns: 1fr 1.2fr;
+  gap: 60px;
+  align-items: flex-start;
+}
+
+.contact-info__title, .contact-form-card__title {
+  font-family: var(--font-serif);
+  font-size: 26px;
+  font-weight: 600;
+  margin-bottom: 14px;
+}
+
+.contact-info__desc {
+  font-size: 15px;
+  color: var(--charcoal-lt);
+  line-height: 1.75;
+  margin-bottom: 32px;
+}
+
+.contact-info__items {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  margin-bottom: 32px;
+}
+
+.contact-info__item {
+  display: flex;
+  gap: 16px;
+  align-items: flex-start;
+}
+
+.contact-info__icon {
+  width: 44px;
+  height: 44px;
+  border-radius: 10px;
+  background: rgba(201,163,85,0.12);
+  color: var(--gold-dark);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  flex-shrink: 0;
+}
+
+.contact-info__item h4 {
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--charcoal);
+  margin-bottom: 4px;
+}
+
+.contact-info__item p, .contact-info__item a {
+  font-size: 14px;
+  color: var(--charcoal-lt);
+  text-decoration: none;
+  line-height: 1.6;
+}
+
+.contact-info__item a:hover { color: var(--gold-dark); }
+
+.contact-info__phone {
+  font-size: 18px !important;
+  font-weight: 700;
+  color: var(--charcoal) !important;
+}
+
+.contact-info__wa {
+  color: #128C7E !important;
+  font-weight: 600;
+}
+
+.contact-map {
+  border-radius: 12px;
+  overflow: hidden;
+  border: 1px solid var(--border-light);
+}
+
+.contact-form-card {
+  background: var(--white);
+  border-radius: 16px;
+  padding: 36px;
+  border: 1px solid var(--border-light);
+  box-shadow: var(--shadow-sm);
+}
+
+.contact-form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+
+.contact-submit {
+  width: 100%;
+  justify-content: center;
+  padding: 15px;
+  font-size: 16px;
+  margin-top: 8px;
+}
+
+@media (max-width: 900px) {
+  .contact-grid { grid-template-columns: 1fr; gap: 36px; }
+}
+
+@media (max-width: 480px) {
+  .contact-form-row { grid-template-columns: 1fr; }
+  .contact-form-card { padding: 24px; }
+}
