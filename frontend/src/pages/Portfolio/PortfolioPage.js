@@ -17,16 +17,62 @@ const FadeUp = ({ children, delay = 0, className = '' }) => {
   );
 };
 
+// All before/after pairs are same room type — kitchen→kitchen, bedroom→bedroom etc.
 const PORTFOLIO = [
-  { id: 1, title: 'Modern Modular Kitchen', category: 'modular-kitchen', location: 'Pune', area: '180 sqft', budget: '₹3.2 L', before: 'https://images.unsplash.com/photo-1556909211-36987daf7b4d?w=700&auto=format', after: 'https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=700&auto=format' },
-  { id: 2, title: 'Luxury Living Room', category: 'living-room', location: 'Mumbai', area: '320 sqft', budget: '₹5.8 L', before: 'https://images.unsplash.com/photo-1560448204-603b3fc33ddc?w=700&auto=format', after: 'https://images.unsplash.com/photo-1555041469-a586c61ea9bc?w=700&auto=format' },
-  { id: 3, title: 'Master Bedroom Suite', category: 'bedroom', location: 'Nashik', area: '240 sqft', budget: '₹4.1 L', before: 'https://images.unsplash.com/photo-1484154218962-a197022b5858?w=700&auto=format', after: 'https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=700&auto=format' },
-  { id: 4, title: 'Complete 3BHK Transformation', category: 'full-home', location: 'Thane', area: '1100 sqft', budget: '₹22 L', before: 'https://images.unsplash.com/photo-1493809842364-78817add7ffb?w=700&auto=format', after: 'https://images.unsplash.com/photo-1600607687644-c7171b42498b?w=700&auto=format' },
-  { id: 5, title: 'Sliding Wardrobe Design', category: 'wardrobe', location: 'Aurangabad', area: '90 sqft', budget: '₹1.6 L', before: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=700&auto=format', after: 'https://images.unsplash.com/photo-1556020685-ae41abfc9365?w=700&auto=format' },
-  { id: 6, title: 'Multi-Level False Ceiling', category: 'false-ceiling', location: 'Pune', area: '400 sqft', budget: '₹1.2 L', before: 'https://images.unsplash.com/photo-1497366216548-37526070297c?w=700&auto=format', after: 'https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?w=700&auto=format' },
-  { id: 7, title: 'Contemporary Kitchen', category: 'modular-kitchen', location: 'Nagpur', area: '210 sqft', budget: '₹3.8 L', before: 'https://images.unsplash.com/photo-1556909196-11b17b7c9a5a?w=700&auto=format', after: 'https://images.unsplash.com/photo-1556909172-54557c7e4fb7?w=700&auto=format' },
-  { id: 8, title: 'Minimalist Bedroom', category: 'bedroom', location: 'Mumbai', area: '200 sqft', budget: '₹3.2 L', before: 'https://images.unsplash.com/photo-1531835551805-16d864c8d311?w=700&auto=format', after: 'https://images.unsplash.com/photo-1616594039964-ae9021a400a0?w=700&auto=format' },
-  { id: 9, title: 'Full Flat Interior', category: 'full-home', location: 'Navi Mumbai', area: '850 sqft', budget: '₹16 L', before: 'https://images.unsplash.com/photo-1493809842364-78817add7ffb?w=700&auto=format', after: 'https://images.unsplash.com/photo-1600566753376-12c8ab7fb75b?w=700&auto=format' }
+  {
+    id: 1, title: 'Modern Modular Kitchen', category: 'modular-kitchen',
+    location: 'Muzaffarpur', area: '180 sqft', budget: '₹3.2 L',
+    before: 'https://images.unsplash.com/photo-1556911073-52527ac43761?w=700&auto=format&fit=crop&q=80',
+    after:  'https://images.unsplash.com/photo-1556909212-d5b604d0c90d?w=700&auto=format&fit=crop&q=80'
+  },
+  {
+    id: 2, title: 'Luxury Living Room', category: 'living-room',
+    location: 'Patna', area: '320 sqft', budget: '₹5.8 L',
+    before: 'https://images.unsplash.com/photo-1480074568708-e7b720bb3f09?w=700&auto=format&fit=crop&q=80',
+    after:  'https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?w=700&auto=format&fit=crop&q=80'
+  },
+  {
+    id: 3, title: 'Master Bedroom Suite', category: 'bedroom',
+    location: 'Muzaffarpur', area: '240 sqft', budget: '₹4.1 L',
+    before: 'https://images.unsplash.com/photo-1505693314120-0d443867891c?w=700&auto=format&fit=crop&q=80',
+    after:  'https://images.unsplash.com/photo-1616594039964-ae9021a400a0?w=700&auto=format&fit=crop&q=80'
+  },
+  {
+    id: 4, title: 'Complete 3BHK Transformation', category: 'full-home',
+    location: 'Darbhanga', area: '1100 sqft', budget: '₹22 L',
+    before: 'https://images.unsplash.com/photo-1493809842364-78817add7ffb?w=700&auto=format&fit=crop&q=80',
+    after:  'https://images.unsplash.com/photo-1600585154526-990dced4db0d?w=700&auto=format&fit=crop&q=80'
+  },
+  {
+    id: 5, title: 'Premium Walk-In Wardrobe', category: 'wardrobe',
+    location: 'Hajipur', area: '90 sqft', budget: '₹1.6 L',
+    before: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=700&auto=format&fit=crop&q=80',
+    after:  'https://images.unsplash.com/photo-1595526114035-0d45ed16cfbf?w=700&auto=format&fit=crop&q=80'
+  },
+  {
+    id: 6, title: 'Multi-Level False Ceiling', category: 'false-ceiling',
+    location: 'Muzaffarpur', area: '400 sqft', budget: '₹1.2 L',
+    before: 'https://images.unsplash.com/photo-1497366216548-37526070297c?w=700&auto=format&fit=crop&q=80',
+    after:  'https://images.unsplash.com/photo-1600566752355-35792bedcfea?w=700&auto=format&fit=crop&q=80'
+  },
+  {
+    id: 7, title: 'Contemporary Kitchen', category: 'modular-kitchen',
+    location: 'Sitamarhi', area: '210 sqft', budget: '₹3.8 L',
+    before: 'https://images.unsplash.com/photo-1556911073-52527ac43761?w=700&auto=format&fit=crop&q=80',
+    after:  'https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=700&auto=format&fit=crop&q=80'
+  },
+  {
+    id: 8, title: 'Minimalist Bedroom', category: 'bedroom',
+    location: 'Muzaffarpur', area: '200 sqft', budget: '₹3.2 L',
+    before: 'https://images.unsplash.com/photo-1505693314120-0d443867891c?w=700&auto=format&fit=crop&q=80',
+    after:  'https://images.unsplash.com/photo-1540518614846-7eded433c457?w=700&auto=format&fit=crop&q=80'
+  },
+  {
+    id: 9, title: 'Full Flat Interior', category: 'full-home',
+    location: 'Motihari', area: '850 sqft', budget: '₹16 L',
+    before: 'https://images.unsplash.com/photo-1493809842364-78817add7ffb?w=700&auto=format&fit=crop&q=80',
+    after:  'https://images.unsplash.com/photo-1600607687644-c7171b42498b?w=700&auto=format&fit=crop&q=80'
+  }
 ];
 
 const CATEGORIES = [

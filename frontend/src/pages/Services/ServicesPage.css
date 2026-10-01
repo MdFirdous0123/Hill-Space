@@ -1,105 +1,167 @@
-.services-hero { padding: 120px 0 70px; }
+/* ── Page Hero ─────────────────────────────────────────────────── */
+.page-hero {
+  background: var(--ink);
+  padding: clamp(100px, 14vw, 160px) 0 clamp(60px, 8vw, 100px);
+  position: relative;
+  overflow: hidden;
+}
 
+.page-hero::before {
+  content: '';
+  position: absolute;
+  bottom: 0; left: 0; right: 0;
+  height: 1px;
+  background: linear-gradient(to right, transparent, rgba(200,146,74,0.4), transparent);
+}
+
+.page-hero::after {
+  content: '';
+  position: absolute;
+  top: -200px; right: -200px;
+  width: 600px; height: 600px;
+  background: radial-gradient(circle, rgba(200,146,74,0.08) 0%, transparent 70%);
+  pointer-events: none;
+}
+
+.page-hero .badge-gold {
+  font-size: 10px; letter-spacing: 3px;
+  background: rgba(200,146,74,0.12);
+  border-color: rgba(200,146,74,0.3);
+  color: var(--gold-light);
+}
+
+.page-hero .section-title {
+  color: #fff;
+  font-size: clamp(40px, 6vw, 68px);
+  margin-top: 14px;
+}
+
+.page-hero .section-title span {
+  color: var(--gold-light);
+  font-style: italic;
+}
+
+.page-hero .divider { background: var(--gold); margin-block: 20px; }
+
+.section-subtitle {
+  font-size: 17px;
+  color: rgba(255,255,255,0.60);
+  max-width: 560px;
+  line-height: 1.75;
+}
+
+/* ── Services Grid ─────────────────────────────────────────────── */
 .services-pg__grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 28px;
+  gap: 24px;
 }
 
+/* ── Service Card ──────────────────────────────────────────────── */
 .services-pg__card {
   background: var(--white);
-  border-radius: 16px;
+  border-radius: var(--r-lg);
   overflow: hidden;
   border: 1px solid var(--border-light);
-  transition: var(--transition);
+  transition: all 0.4s cubic-bezier(0.4,0,0.2,1);
+  display: flex;
+  flex-direction: column;
 }
 
 .services-pg__card:hover {
+  border-color: var(--gold-light);
   transform: translateY(-6px);
-  box-shadow: var(--shadow-lg);
+  box-shadow: 0 20px 60px rgba(15,14,13,0.12);
 }
 
+/* Image */
 .services-pg__card-img {
   position: relative;
-  height: 200px;
+  aspect-ratio: 4/3;
   overflow: hidden;
 }
 
 .services-pg__card-img img {
-  width: 100%;
-  height: 100%;
+  width: 100%; height: 100%;
   object-fit: cover;
-  transition: transform 0.5s ease;
+  transition: transform 0.65s cubic-bezier(0.4,0,0.2,1);
 }
 
 .services-pg__card:hover .services-pg__card-img img {
-  transform: scale(1.06);
+  transform: scale(1.07);
 }
 
 .services-pg__card-badge {
   position: absolute;
-  bottom: 12px;
-  right: 12px;
-  width: 44px;
-  height: 44px;
-  background: rgba(255,255,255,0.95);
-  border-radius: 10px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 22px;
-  box-shadow: var(--shadow-sm);
+  top: 14px; right: 14px;
+  width: 44px; height: 44px;
+  background: rgba(255,255,255,0.92);
+  backdrop-filter: blur(8px);
+  border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  font-size: 20px;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.12);
 }
 
-.services-pg__card-body { padding: 24px; }
+/* Body */
+.services-pg__card-body {
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
 
 .services-pg__card-name {
-  font-family: var(--font-serif);
-  font-size: 19px;
+  font-family: var(--font-display);
+  font-size: 22px;
   font-weight: 600;
+  color: var(--ink);
   margin-bottom: 8px;
+  line-height: 1.2;
 }
 
 .services-pg__card-desc {
   font-size: 14px;
-  color: var(--charcoal-lt);
+  color: var(--ink-mid);
   line-height: 1.65;
-  margin-bottom: 16px;
+  margin-bottom: 18px;
 }
 
+/* Meta row */
 .services-pg__card-meta {
-  display: flex;
-  gap: 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
   padding: 14px 0;
   border-top: 1px solid var(--border-light);
   border-bottom: 1px solid var(--border-light);
-  margin-bottom: 16px;
+  margin-bottom: 18px;
 }
 
-.services-pg__meta-item {
-  display: flex;
-  flex-direction: column;
-  gap: 2px;
-}
+.services-pg__meta-item { display: flex; flex-direction: column; gap: 3px; }
 
 .services-pg__meta-label {
-  font-size: 11px;
-  color: var(--charcoal-lt);
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 1.5px;
   text-transform: uppercase;
-  letter-spacing: 0.8px;
+  color: var(--ink-light);
 }
 
 .services-pg__meta-value {
-  font-size: 14px;
-  font-weight: 600;
+  font-size: 16px;
+  font-weight: 700;
   color: var(--gold-dark);
+  font-family: var(--font-display);
 }
 
+/* Features */
 .services-pg__features {
   display: flex;
   flex-direction: column;
-  gap: 6px;
+  gap: 7px;
   margin-bottom: 20px;
+  flex: 1;
 }
 
 .services-pg__features li {
@@ -107,26 +169,34 @@
   align-items: center;
   gap: 8px;
   font-size: 13px;
-  color: var(--charcoal-md);
+  color: var(--ink-soft);
 }
 
+/* Actions */
 .services-pg__card-actions {
   display: flex;
   gap: 10px;
+  margin-top: auto;
 }
 
-/* CTA from homepage */
-.cta-banner {
-  background: linear-gradient(135deg, var(--gold-dark) 0%, var(--gold) 100%);
-  padding: 80px 0;
+.services-pg__card-actions .btn {
+  flex: 1;
+  justify-content: center;
 }
-.cta-banner__heading { font-family: var(--font-serif); font-size: 38px; margin-bottom: 14px; }
-.cta-banner__sub { font-size: 17px; color: rgba(255,255,255,0.88); margin-bottom: 32px; max-width: 480px; margin-left: auto; margin-right: auto; }
 
-@media (max-width: 1024px) {
+/* ── CTA Banner ────────────────────────────────────────────────── */
+.cta-banner { background: var(--ink); }
+.cta-banner__heading { font-family: var(--font-display); font-size: clamp(28px, 4vw, 48px); font-weight: 600; color: #fff; margin-bottom: 12px; }
+.cta-banner__sub { color: rgba(255,255,255,0.55); font-size: 16px; margin-bottom: 28px; }
+
+.text-center { text-align: center; }
+
+/* ── Responsive ────────────────────────────────────────────────── */
+@media (max-width: 1100px) {
   .services-pg__grid { grid-template-columns: repeat(2, 1fr); }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 640px) {
   .services-pg__grid { grid-template-columns: 1fr; }
+  .services-pg__card-actions { flex-direction: column; }
 }
