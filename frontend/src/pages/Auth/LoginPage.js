@@ -30,8 +30,11 @@ const LoginPage = () => {
     <>
       <Helmet><title>Login — Hillspace</title></Helmet>
       <div className="auth-page">
-        <div className="auth-page__left">
-          <img src="https://images.unsplash.com/photo-1600607687644-c7171b42498b?w=900&auto=format&fit=crop" alt="Beautiful interior" />
+        <div className="auth-page__left" style={{
+          backgroundImage: `url('https://images.unsplash.com/photo-1600210492493-0946911123ea?w=900&auto=format&fit=crop&q=80')`,
+          backgroundSize: 'cover',
+          backgroundPosition: 'center'
+        }}>
           <div className="auth-page__left-overlay">
             <div className="auth-page__brand">
               <div className="auth-page__brand-icon">H</div>

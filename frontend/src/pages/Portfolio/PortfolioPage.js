@@ -41,7 +41,7 @@ const PORTFOLIO = [
     id: 4, title: 'Complete 3BHK Transformation', category: 'full-home',
     location: 'Darbhanga', area: '1100 sqft', budget: '₹22 L',
     before: 'https://images.unsplash.com/photo-1493809842364-78817add7ffb?w=700&auto=format&fit=crop&q=80',
-    after:  'https://images.unsplash.com/photo-1600585154526-990dced4db0d?w=700&auto=format&fit=crop&q=80'
+    after:  'https://images.unsplash.com/photo-1600210492493-0946911123ea?w=700&auto=format&fit=crop&q=80'
   },
   {
     id: 5, title: 'Premium Walk-In Wardrobe', category: 'wardrobe',
@@ -53,7 +53,7 @@ const PORTFOLIO = [
     id: 6, title: 'Multi-Level False Ceiling', category: 'false-ceiling',
     location: 'Muzaffarpur', area: '400 sqft', budget: '₹1.2 L',
     before: 'https://images.unsplash.com/photo-1497366216548-37526070297c?w=700&auto=format&fit=crop&q=80',
-    after:  'https://images.unsplash.com/photo-1600566752355-35792bedcfea?w=700&auto=format&fit=crop&q=80'
+    after:  'https://images.unsplash.com/photo-1536376072261-38c75010e6c9?w=700&auto=format&fit=crop&q=80'
   },
   {
     id: 7, title: 'Contemporary Kitchen', category: 'modular-kitchen',
@@ -71,7 +71,7 @@ const PORTFOLIO = [
     id: 9, title: 'Full Flat Interior', category: 'full-home',
     location: 'Motihari', area: '850 sqft', budget: '₹16 L',
     before: 'https://images.unsplash.com/photo-1493809842364-78817add7ffb?w=700&auto=format&fit=crop&q=80',
-    after:  'https://images.unsplash.com/photo-1600607687644-c7171b42498b?w=700&auto=format&fit=crop&q=80'
+    after:  'https://images.unsplash.com/photo-1600210492493-0946911123ea?w=700&auto=format&fit=crop&q=80'
   }
 ];
 
@@ -95,7 +95,7 @@ const PortfolioPage = () => {
     <>
       <Helmet>
         <title>Our Portfolio — Hillspace Interior Design Studio</title>
-        <meta name="description" content="Browse Hillspace's portfolio of stunning interior transformations across Maharashtra. Before and after photos of kitchens, living rooms, bedrooms, and full homes." />
+        <meta name="description" content="Browse Hillspace's portfolio of stunning interior transformations across Bihar. Before and after photos of kitchens, living rooms, bedrooms, and full homes." />
       </Helmet>
 
       <div className="page-hero">
@@ -107,7 +107,7 @@ const PortfolioPage = () => {
             </h1>
             <div className="divider"></div>
             <p className="section-subtitle">
-              Real projects. Real families. Real transformations across Maharashtra.
+              Real projects. Real families. Real transformations across Bihar.
             </p>
           </FadeUp>
         </div>

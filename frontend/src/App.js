@@ -1,5 +1,5 @@
 import React, { Suspense, lazy } from 'react';
-import { Routes, Route } from 'react-router-dom';
+import { Routes, Route, useLocation } from 'react-router-dom';
 import Navbar from './components/Navbar/Navbar';
 import Footer from './components/Footer/Footer';
 import WhatsAppButton from './components/WhatsAppButton/WhatsAppButton';
@@ -19,10 +19,13 @@ const LoginPage          = lazy(() => import('./pages/Auth/LoginPage'));
 const SignupPage         = lazy(() => import('./pages/Auth/SignupPage'));
 
 function App() {
+  const location = useLocation();
+  const isAuthPage = ['/login', '/signup'].includes(location.pathname);
+
   return (
     <>
       <ScrollToTop />
-      <Navbar />
+      {!isAuthPage && <Navbar />}
       <main>
         <Suspense fallback={<LoadingSpinner />}>
           <Routes>
@@ -40,7 +43,7 @@ function App() {
           </Routes>
         </Suspense>
       </main>
-      <Footer />
+      {!isAuthPage && <Footer />}
       <WhatsAppButton />
     </>
   );

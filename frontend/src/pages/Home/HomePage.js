@@ -32,12 +32,12 @@ const SERVICES = [
   {
     slug: 'wardrobe', name: 'Wardrobe Design',
     desc: 'Floor-to-ceiling wardrobes with smart interiors, soft-close drawers, and integrated lighting.',
-    img: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=700&auto=format&fit=crop&q=80'
+    img: 'https://images.unsplash.com/photo-1595526114035-0d45ed16cfbf?w=700&auto=format&fit=crop&q=80'
   },
   {
     slug: 'false-ceiling', name: 'False Ceiling',
     desc: 'Multi-level POP & gypsum ceilings with cove lighting that transforms the mood of any space.',
-    img: 'https://images.unsplash.com/photo-1600566752355-35792bedcfea?w=700&auto=format&fit=crop&q=80'
+    img: 'https://images.unsplash.com/photo-1536376072261-38c75010e6c9?w=700&auto=format&fit=crop&q=80'
   },
   {
     slug: 'full-home', name: 'Full Home Interior',
