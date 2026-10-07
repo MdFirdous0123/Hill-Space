@@ -17,32 +17,32 @@ const SERVICES = [
   {
     slug: 'modular-kitchen', name: 'Modular Kitchen',
     desc: 'Custom modular kitchens with smart storage, premium shutters, and layouts designed for how you actually cook.',
-    img: 'https://images.unsplash.com/photo-1556909212-d5b604d0c90d?w=700&auto=format&fit=crop&q=85'
+    img: 'https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=700&auto=format&fit=crop&q=80'
   },
   {
     slug: 'living-room', name: 'Living Room',
     desc: 'Statement walls, curated furniture, ambient lighting — living rooms that impress every guest and comfort every family.',
-    img: 'https://images.unsplash.com/photo-1567016432779-094069958ea5?w=700&auto=format&fit=crop&q=85'
+    img: 'https://images.unsplash.com/photo-1555041469-a586c61ea9bc?w=700&auto=format&fit=crop&q=80'
   },
   {
     slug: 'bedroom', name: 'Master Bedroom',
     desc: 'Serene, luxury bedrooms crafted for deep rest — from headboard walls to walk-in wardrobe integration.',
-    img: 'https://images.unsplash.com/photo-1616594039964-ae9021a400a0?w=700&auto=format&fit=crop&q=85'
+    img: 'https://images.unsplash.com/photo-1540518614846-7eded433c457?w=700&auto=format&fit=crop&q=80'
   },
   {
     slug: 'wardrobe', name: 'Wardrobe Design',
     desc: 'Floor-to-ceiling wardrobes with smart interiors, soft-close drawers, and integrated lighting.',
-    img: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=700&auto=format&fit=crop&q=85'
+    img: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=700&auto=format&fit=crop&q=80'
   },
   {
     slug: 'false-ceiling', name: 'False Ceiling',
     desc: 'Multi-level POP & gypsum ceilings with cove lighting that transforms the mood of any space.',
-    img: 'https://images.unsplash.com/photo-1615529182904-14819c35db37?w=700&auto=format&fit=crop&q=85'
+    img: 'https://images.unsplash.com/photo-1600566752355-35792bedcfea?w=700&auto=format&fit=crop&q=80'
   },
   {
     slug: 'full-home', name: 'Full Home Interior',
     desc: 'Complete end-to-end home transformation — kitchen, living, bedrooms, bathrooms, and more under one roof.',
-    img: 'https://images.unsplash.com/photo-1600607687644-c7171b42498b?w=700&auto=format&fit=crop&q=85'
+    img: 'https://images.unsplash.com/photo-1600210492493-0946911123ea?w=700&auto=format&fit=crop&q=80'
   }
 ];
 

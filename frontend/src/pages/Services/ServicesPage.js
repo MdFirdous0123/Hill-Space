@@ -20,7 +20,7 @@ const FadeUp = ({ children, delay = 0, className = '' }) => {
 const ALL_SERVICES = [
   {
     slug: 'modular-kitchen', name: 'Modular Kitchen', icon: '🍳',
-    heroImg: 'https://images.unsplash.com/photo-1556909212-d5b604d0c90d?w=900&auto=format&fit=crop&q=85',
+    heroImg: 'https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=900&auto=format&fit=crop&q=80',
     shortDesc: 'Smart, beautiful kitchens designed around the way your family cooks and lives.',
     desc: 'Our modular kitchens combine aesthetics with functionality. From parallel layouts to L-shaped and island kitchens — we design around your space and habits.',
     startingAt: '₹1.2 Lakhs', timeline: '15–28 days',
@@ -28,7 +28,7 @@ const ALL_SERVICES = [
   },
   {
     slug: 'living-room', name: 'Living Room', icon: '🛋️',
-    heroImg: 'https://images.unsplash.com/photo-1567016432779-094069958ea5?w=900&auto=format&fit=crop&q=85',
+    heroImg: 'https://images.unsplash.com/photo-1555041469-a586c61ea9bc?w=900&auto=format&fit=crop&q=80',
     shortDesc: 'Transform your living room into a space that wows guests and comforts family.',
     desc: 'Statement TV units, textured accent walls, designer sofas, and ambient lighting systems — we create living rooms that reflect your personality.',
     startingAt: '₹1.5 Lakhs', timeline: '20–35 days',
@@ -36,7 +36,7 @@ const ALL_SERVICES = [
   },
   {
     slug: 'bedroom', name: 'Master Bedroom', icon: '🛏️',
-    heroImg: 'https://images.unsplash.com/photo-1616594039964-ae9021a400a0?w=900&auto=format&fit=crop&q=85',
+    heroImg: 'https://images.unsplash.com/photo-1540518614846-7eded433c457?w=900&auto=format&fit=crop&q=80',
     shortDesc: 'Serene, personalised bedrooms that feel like a luxury retreat every night.',
     desc: 'From walk-in wardrobes to layered lighting and upholstered headboards — every element designed to give you the best sleep of your life.',
     startingAt: '₹1.8 Lakhs', timeline: '18–30 days',
@@ -44,7 +44,7 @@ const ALL_SERVICES = [
   },
   {
     slug: 'wardrobe', name: 'Wardrobe Design', icon: '🚪',
-    heroImg: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=900&auto=format&fit=crop&q=85',
+    heroImg: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=900&auto=format&fit=crop&q=80',
     shortDesc: 'Floor-to-ceiling wardrobes where every item has a perfect home.',
     desc: 'Sliding, hinged, or walk-in — our wardrobes are built with custom interiors that maximise every centimetre of space.',
     startingAt: '₹80,000', timeline: '10–18 days',
@@ -52,7 +52,7 @@ const ALL_SERVICES = [
   },
   {
     slug: 'false-ceiling', name: 'False Ceiling', icon: '✨',
-    heroImg: 'https://images.unsplash.com/photo-1615529182904-14819c35db37?w=900&auto=format&fit=crop&q=85',
+    heroImg: 'https://images.unsplash.com/photo-1600566752355-35792bedcfea?w=900&auto=format&fit=crop&q=80',
     shortDesc: 'Elevate every room with multi-level ceilings and dramatic lighting.',
     desc: 'POP, gypsum, and PVC false ceilings with cove lighting, recessed spotlights, and decorative elements that transform the feel of any room.',
     startingAt: '₹60,000', timeline: '7–14 days',
@@ -60,7 +60,7 @@ const ALL_SERVICES = [
   },
   {
     slug: 'full-home', name: 'Full Home Interior', icon: '🏠',
-    heroImg: 'https://images.unsplash.com/photo-1600585154526-990dced4db0d?w=900&auto=format&fit=crop&q=85',
+    heroImg: 'https://images.unsplash.com/photo-1600210492493-0946911123ea?w=900&auto=format&fit=crop&q=80',
     shortDesc: 'Complete home transformation from bare walls to beautiful living.',
     desc: 'Our complete home package covers every room — kitchen, living, dining, all bedrooms, bathrooms, and common areas — with a single design vision and dedicated project manager.',
     startingAt: '₹8 Lakhs', timeline: '35–45 days',
@@ -68,7 +68,7 @@ const ALL_SERVICES = [
   },
   {
     slug: 'bathroom', name: 'Bathroom Design', icon: '🚿',
-    heroImg: 'https://images.unsplash.com/photo-1552321554-5fefe8c9ef14?w=900&auto=format&fit=crop&q=85',
+    heroImg: 'https://images.unsplash.com/photo-1552321554-5fefe8c9ef14?w=900&auto=format&fit=crop&q=80',
     shortDesc: 'Spa-like bathrooms with premium tiles, fixtures, and thoughtful storage.',
     desc: 'We transform bathrooms into spa-like retreats with premium tiles, vanities, mirrors, and storage solutions.',
     startingAt: '₹1.2 Lakhs', timeline: '10–20 days',
@@ -76,7 +76,7 @@ const ALL_SERVICES = [
   },
   {
     slug: 'pooja-room', name: 'Pooja Room', icon: '🪔',
-    heroImg: 'https://images.unsplash.com/photo-1598300042247-d088f8ab3a91?w=900&auto=format&fit=crop&q=85',
+    heroImg: 'https://images.unsplash.com/photo-1598300042247-d088f8ab3a91?w=900&auto=format&fit=crop&q=80',
     shortDesc: 'Sacred, serene pooja spaces crafted with reverence and artistry.',
     desc: 'Custom-designed pooja rooms and mandirs with traditional craftsmanship, marble, wood, and spiritual lighting.',
     startingAt: '₹60,000', timeline: '7–15 days',
