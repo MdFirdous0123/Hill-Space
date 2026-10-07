@@ -136,14 +136,16 @@ const HomePage = () => {
     <div className="homepage">
 
       {/* ── HERO ───────────────────────────────────────────────── */}
-      <section className="hero">
-        <div className="hero__bg">
-          <img
-            src="https://images.unsplash.com/photo-1600607687644-c7171b42498b?w=1600&auto=format&fit=crop&q=80"
-            alt="Beautiful interior by Hillspace"
-          />
-          <div className="hero__overlay"></div>
-        </div>
+      <section
+        className="hero"
+        style={{
+          backgroundImage: `url('https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=1600&auto=format&fit=crop&q=80')`,
+          backgroundSize: 'cover',
+          backgroundPosition: 'center 40%',
+          backgroundRepeat: 'no-repeat'
+        }}
+      >
+        <div className="hero__overlay"></div>
 
         <div className="hero__content container-wide">
           <div className="hero__left">
