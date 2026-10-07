@@ -28,7 +28,7 @@ const ALL_SERVICES = [
   },
   {
     slug: 'living-room', name: 'Living Room', icon: '🛋️',
-    heroImg: 'https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?w=900&auto=format&fit=crop&q=85',
+    heroImg: 'https://images.unsplash.com/photo-1567016432779-094069958ea5?w=900&auto=format&fit=crop&q=85',
     shortDesc: 'Transform your living room into a space that wows guests and comforts family.',
     desc: 'Statement TV units, textured accent walls, designer sofas, and ambient lighting systems — we create living rooms that reflect your personality.',
     startingAt: '₹1.5 Lakhs', timeline: '20–35 days',
@@ -44,7 +44,7 @@ const ALL_SERVICES = [
   },
   {
     slug: 'wardrobe', name: 'Wardrobe Design', icon: '🚪',
-    heroImg: 'https://images.unsplash.com/photo-1595526114035-0d45ed16cfbf?w=900&auto=format&fit=crop&q=85',
+    heroImg: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=900&auto=format&fit=crop&q=85',
     shortDesc: 'Floor-to-ceiling wardrobes where every item has a perfect home.',
     desc: 'Sliding, hinged, or walk-in — our wardrobes are built with custom interiors that maximise every centimetre of space.',
     startingAt: '₹80,000', timeline: '10–18 days',
@@ -52,7 +52,7 @@ const ALL_SERVICES = [
   },
   {
     slug: 'false-ceiling', name: 'False Ceiling', icon: '✨',
-    heroImg: 'https://images.unsplash.com/photo-1600566752355-35792bedcfea?w=900&auto=format&fit=crop&q=85',
+    heroImg: 'https://images.unsplash.com/photo-1615529182904-14819c35db37?w=900&auto=format&fit=crop&q=85',
     shortDesc: 'Elevate every room with multi-level ceilings and dramatic lighting.',
     desc: 'POP, gypsum, and PVC false ceilings with cove lighting, recessed spotlights, and decorative elements that transform the feel of any room.',
     startingAt: '₹60,000', timeline: '7–14 days',

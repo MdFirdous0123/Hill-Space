@@ -22,7 +22,7 @@ const SERVICES = [
   {
     slug: 'living-room', name: 'Living Room',
     desc: 'Statement walls, curated furniture, ambient lighting — living rooms that impress every guest and comfort every family.',
-    img: 'https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?w=700&auto=format&fit=crop&q=85'
+    img: 'https://images.unsplash.com/photo-1567016432779-094069958ea5?w=700&auto=format&fit=crop&q=85'
   },
   {
     slug: 'bedroom', name: 'Master Bedroom',
@@ -32,17 +32,17 @@ const SERVICES = [
   {
     slug: 'wardrobe', name: 'Wardrobe Design',
     desc: 'Floor-to-ceiling wardrobes with smart interiors, soft-close drawers, and integrated lighting.',
-    img: 'https://images.unsplash.com/photo-1595526114035-0d45ed16cfbf?w=700&auto=format&fit=crop&q=85'
+    img: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=700&auto=format&fit=crop&q=85'
   },
   {
     slug: 'false-ceiling', name: 'False Ceiling',
     desc: 'Multi-level POP & gypsum ceilings with cove lighting that transforms the mood of any space.',
-    img: 'https://images.unsplash.com/photo-1600566752355-35792bedcfea?w=700&auto=format&fit=crop&q=85'
+    img: 'https://images.unsplash.com/photo-1615529182904-14819c35db37?w=700&auto=format&fit=crop&q=85'
   },
   {
     slug: 'full-home', name: 'Full Home Interior',
     desc: 'Complete end-to-end home transformation — kitchen, living, bedrooms, bathrooms, and more under one roof.',
-    img: 'https://images.unsplash.com/photo-1600585154526-990dced4db0d?w=700&auto=format&fit=crop&q=85'
+    img: 'https://images.unsplash.com/photo-1600607687644-c7171b42498b?w=700&auto=format&fit=crop&q=85'
   }
 ];
 
@@ -277,33 +277,32 @@ const HomePage = () => {
       {/* ── SERVICES ───────────────────────────────────────────── */}
       <section className="section services-section">
         <div className="container">
-          <FadeUp className="text-center">
-            <span className="badge badge-gold">What We Do Best</span>
-            <h2 className="section-title" style={{marginTop:'12px'}}>Our Signature <span>Services</span></h2>
-            <div className="divider divider-center"></div>
-            <p className="section-subtitle">
+          <FadeUp className="section-intro section-intro--center">
+            <span className="section-label">What We Do Best</span>
+            <h2 className="section-title">Our Signature <span>Services</span></h2>
+            <p className="section-body">
               Every space is different. Every family is different. That's why we design
               interiors that are entirely and uniquely yours.
             </p>
           </FadeUp>
           <div className="services-grid">
             {SERVICES.map((s, i) => (
-              <FadeUp key={s.slug} delay={i * 0.08} className="service-card">
-                <div className="service-card__img-wrap">
-                  <img src={s.img} alt={s.name} loading="lazy" />
-                </div>
-                <div className="service-card__body">
-                  <h3 className="service-card__name">{s.name}</h3>
-                  <p className="service-card__desc">{s.desc}</p>
-                  <Link to={`/services/${s.slug}`} className="service-card__link">
-                    Explore <FiArrowRight size={16} />
-                  </Link>
-                </div>
+              <FadeUp key={s.slug} delay={i * 0.08}>
+                <Link to={`/services/${s.slug}`} className={`service-card${i === 0 ? ' service-card--large' : ''}`}>
+                  <img className="service-card__img" src={s.img} alt={s.name} loading="lazy" />
+                  <div className="service-card__overlay" />
+                  <div className="service-card__body">
+                    <p className="service-card__tag">Hillspace</p>
+                    <h3 className="service-card__name">{s.name}</h3>
+                    <p className="service-card__desc">{s.desc}</p>
+                    <span className="service-card__link">Explore <FiArrowRight size={14} /></span>
+                  </div>
+                </Link>
               </FadeUp>
             ))}
           </div>
           <div className="text-center" style={{marginTop:'48px'}}>
-            <Link to="/services" className="btn btn-outline">View All Services</Link>
+            <Link to="/services" className="btn btn-outline">View All Services →</Link>
           </div>
         </div>
       </section>
